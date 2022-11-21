@@ -11,6 +11,8 @@ async function getNews(url) {
     // Storing data in form of JSON
     var data = await response.json();
     let articles=data.articles;
+    console.log("data", data)
+    console.log("articles", articles)
     articles.forEach((element)=>{
         let news=`<div class="swiper-slide">
         <div class="newsbox">
