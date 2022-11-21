@@ -120,14 +120,11 @@ async function getNews(url) {
     
     // Storing response
     const response = await fetch(url);
-    console.log("response", response);
+    console.log(response);
     var newsHtml;
     // Storing data in form of JSON
     var data = await response.json();
-    console.log("data", data)
     let articles=data.articles;
-    console.log("articles", articles)
-    
     articles.forEach((element)=>{
         let news=`<div class="swiper-slide">
         <div class="newsbox">
@@ -139,7 +136,6 @@ async function getNews(url) {
     </div>`;
     newsHtml+=news;
     });
-
     let newsfeed=document.getElementById('newsfeed');
     newsfeed.innerHTML=newsHtml; 
     console.log(data);
