@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <script src="https://kit.fontawesome.com/9cbbeb09cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <a href="landing_page.html"><img class="logo" src="./images/logo.png" alt= "logo"></a>
+            <div class="heading">Search News</div>
+            <input id="searchInput" type="text" placeholder="Enter Keywords">
+            <li><a href="#">Category</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li id="General" class="list"><a href="#">General</a></li>
+                        <li id="Business" class="list"><a href="#">Business</a></li>
+                        <li id="Entertainment" class="list"><a href="#">Entertainment</a></li>
+                        <li id="Health" class="list"><a href="#">Health</a></li>
+                        <li id="Science" class="list"><a href="#">Science</a></li>
+                        <li id="Sports" class="list"><a href="#">Sports</a></li>
+                        <li id="Technology" class="list"><a href="#">Technology</a></li>
+                        <li id="None" class="list active"><a href="#">None</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Sort By</a>
+                <div class="sortByMenu">
+                    <ul>    
+                        <li class="slist"><a>Relevancy</a></li>
+                        <li class="slist"><a>Popularity</a></li>
+                        <li class="slist sActive"><a>PublishedAt</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="searchbtn"><a href="#"><i class="fa fa-search"></i> Search</a></li>
+        </ul>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="newsfeed">
+        </div> 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+  
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    <script src="search.js"></script>
+</body>
+</html>

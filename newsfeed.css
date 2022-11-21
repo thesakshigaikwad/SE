@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+html,
+      body {
+        /* position: relative; */
+        height: 100%;
+      }
+
+      body {
+        /* background: #ffffff; */
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        /* color: #000;
+        margin: 0;
+        padding: 0; */
+      }
+
+      .swiper {
+        top: 5px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        /* text-align: center; */
+        font-size: 18px;
+        background: #fff;
+        /* border: 2px solid red; */
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+      }
+      .newsbox{
+    position: absolute;
+    top: 10px;
+    left: 28%;
+    height: 600px;
+    width: 600px;
+    padding: 25px;
+    /* border: 2px solid red; */
+    background-color: black;
+    color: whitesmoke;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 20px grey ;
+}
+.newsbox img{
+    position: relative;
+    width: 550px;
+    height: 300px;
+    /* top: 25px;
+    left: 25px; */
+}
+/* .newsbox img:hover{
+    cursor: pointer;
+} */
+.btn{
+    position: absolute;
+    top: 530px;
+    left: 450px;
+    height: 45px;
+    width: 120px;
+    font-size: 15px;
+    background-color: black;
+    color: whitesmoke;
+    border: 1.5px solid whitesmoke
+}
+.btn:hover{
+    background-color: whitesmoke;
+    color:black;
+    cursor: pointer;
+}
+p{
+    position: relative;
+    top: 20px;
+}
+
+
+
+.navbar{
+    text-align: center;
+    background-color: black;
+}
+.navbar ul{
+    width: 97%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+.navbar ul li{
+    width: 120px;
+    margin: 13px;
+    padding: 13px;
+    /* height: 10px;    */
+    box-sizing: border-box;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+.navbar ul li:hover{
+    background-color: rgb(73, 73, 73);
+    border-radius: 3px;
+    transition-delay: 0.05s;
+    cursor: pointer;
+}
+.logo{
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    height: 50px;
+}

@@ -1,0 +1,105 @@
+/* body{
+    background-color: #033f4f;
+     background: url(/images/landing-page\ wall\ 2.jpg) no-repeat; */
+.image{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+ul{
+    position: absolute;
+    /* max-width: 2000px; */
+    top: 0;
+    left: 0;
+    width: 94%;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    z-index: 1;
+    /* padding: 10px; */
+}
+ul li{
+    padding: 15px;
+    list-style: none;
+    font-size: 25px;
+    color: #000000;
+    font-weight: 800;
+    /* text-decoration: underline; */
+    /* box-sizing: border-box; */
+}
+ul li:hover{
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+.navbar img{
+    position: absolute;
+    left: 1%;
+    top: 2%;
+    z-index: 1;
+    height: 70px;
+}
+.mid{
+    position: absolute;
+    top: 35%;
+    left: 38%;
+    font-size: 100px;
+    font-weight: 800;
+    color: #000000;
+    animation: textanimate 1s linear;
+}
+.lower{
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    animation: btnanimate 1s linear;
+}
+.btn{
+    /* position: absolute; */
+    background: none;
+    color: black;
+    height: 80px;
+    width: 150px;
+    border: 2px solid black;
+    margin: 4px;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 5px;
+    animation: btnanimate 1s linear;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition-delay: 0.05s;
+}
+@keyframes btnanimate{
+    0%{
+        top: 100%;
+        opacity: 0;
+    }
+    50%{
+        top: 75%;
+        opacity: 0.5;
+    }
+    100%{
+        top: 52%;
+        opacity: 1;
+    }
+}
+@keyframes textanimate{
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    50%{
+        top: 19%;
+        opacity: 0.5;
+    }
+    100%{
+        top: 35%;
+        opacity: 1;
+    }
+
+}

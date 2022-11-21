@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Newsfeed</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9cbbeb09cc.js" crossorigin="anonymous"></script>
+    <script src="newsfeed.js"></script>
+    <link rel="stylesheet" href="newsfeed.css">
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <!-- <div class="navbar">
+      <ul>
+        <a href="landing_page.html"><img class="logo" src="./images/logo.png" alt= "logo"></a>
+          <li>Search <i class="fa fa-search"></i></li>
+          <li>About</li>
+          <li>Contact Us</li>
+      </ul>
+    </div> -->
+    <div class="navbar">
+    <ul>
+      <a href="landing_page.html"><img class="logo" src="./images/logo.png" alt= "logo"></a>
+      <li id="searchbtn"><a href="search.html"> Search <i class="fa fa-search"></i></a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="newsfeed">
+      </div> 
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
